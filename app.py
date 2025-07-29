@@ -8,7 +8,6 @@ def detect_and_click_skip():
         # Save screenshot (debug)
         pyautogui.screenshot('current_screen.png')
 
-        # Try detecting the button
         location = pyautogui.locateOnScreen('skip_button.png', confidence=0.7)
         if location:
             print("🎯 'Skip Ad' button found!")
